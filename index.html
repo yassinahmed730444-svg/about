@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Biology Knowledge Engine</title>
+  <link rel="stylesheet" href="new1.css" />
+  <style>body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0c2a;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1c3d;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  color: #00d8ff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #333;
+}
+
+h1, h2 {
+  color: #00d8ff;
+}
+
+button {
+  background-color: #00d8ff;
+  color: #0b0c2a;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #1a1c3d;
+} </style> 
+<script>
+function startQuiz() {
+  const quizContainer = document.getElementById("quiz-container");
+  quizContainer.innerHTML = `
+    <p>Question 1: What effect does microgravity have on bone density?</p>
+    <ul>
+      <li>A) Increases it</li>
+      <li>B) No effect</li>
+      <li>C) Decreases it ✅</li>
+      <li>D) Makes bones stronger</li>
+    </ul>
+  `;
+}
+</script>
+</head>
+<body>
+  <header>
+    <h1>🚀 Space Biology Knowledge Engine</h1>
+    <nav>
+      <a href="#topics">Topics</a>
+      <a href="#research">Research</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Explore the Biology of Space</h2>
+    <p>Discover how life adapts beyond Earth—from microbes to astronauts.</p>
+  </section>
+
+  <section id="topics">
+    <h2>🔬 Key Topics</h2>
+    <ul>
+      <li>Microgravity & Human Physiology</li>
+      <li>Space Agriculture</li>
+      <li>Radiation Effects</li>
+      <li>Astrobiology</li>
+      <li>Space Medicine</li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>📚 Latest Research</h2>
+	<img src="https://science.nasa.gov/wp-content/uploads/2024/06/full.jpg" "margin-left: 20px;" width="300px" height="300px" alt="Spacecraft above Earth">
+    <div id="research-feed">
+      <!-- Dynamic content can be loaded here -->
+      <p>Coming soon: ISS experiment summaries and NASA updates.</p>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <h2>🧠 Space Biology Quiz</h2>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <div id="quiz-container"></div>
+  </section>
+
+  <section id="about">
+    <h2>👩‍🚀 About</h2>
+    <p>This site is built to inspire curiosity about life in space. Created by space enthusiasts for learners everywhere.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Space Biology Knowledge Engine</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
